@@ -5,16 +5,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Data Visualizations</title>
+        <title>economic_freedom_score_2019</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
         <style>
             h1 {
                 color: purple;
                 text-align: center;
                 font-style: oblique;
                 font-weight: bold;
-                font-size: 32px;
+                font-size: 10px;
                 padding-left: 5pc
             }
 
@@ -22,6 +23,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 display: block;
+                font-size: 5px;
             }
 
             p {
@@ -46,12 +48,19 @@
             }
 
             li {
-                padding-right: 5pc;
-                text-align: right;
+                padding-left: 1pc;
+                text-align: left;
+                
             }
+
+            body{
+                background-color: violet;
+            }
+
         </style>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Data Visualizations</a>
+            <a class="navbar-brand" href="#">HOME</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,39 +68,40 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="" https://www.heritage.org/index/">Economic Data Source<span
+                        <a class="nav-link" href="https://www.kaggle.com/lewisduncan93/the-economic-freedom-index">SOURCE<span
                             class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="NOTEBOOK_IMAGE.html"> Extraction & Transformation Process</a>
+                        <a class="nav-link" href="./ETL_eco_freedom.ipynb">PROCESS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="table.html">Transformed Output Data</a>
+                        <a class="nav-link" href="table_NEW.html">DATA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="data_visualizations.html">Loaded Data Visualizations</a>
+                        <a class="nav-link" href="data_visualizations.html">VISUALIZATIONS</a>
                     </li>
                     
                 </ul>
             </div>
         </nav>
-
+        
         <nav class="navbar navbar-primary bg-text-success">
-            <a class="navbar-brand" href="index.html">
-                <img src="Resources/images/NAME OF FILE" width="30" height="30" alt="">
-            </a>
+            <!--<a class="navbar-brand" href="index.html">
+                <img src="./Images/scatter_plot.png" width="25" height="25" alt="Economic Freedom Vs Labor Freedom by Region">
+            </a>-->
             <span class="text-success"></span>
         </nav>
+        
         <div class="container-fluid full">
-            <img class="img-thumbnail" src="Resources/images/NAME OF FILE">
+            <img class="img-thumbnail" src="./Images/scatter_plot.png">
         </div>
 
     </head>
 
     <body>
 
-        <h1 class="display-5 primary">ETL - The Load </h1>
-        <h2 class="display-5 primary">PLOTS</h2>
+        
+        <h2 class="display-5 primary">Description:</h2>
         <p> We wanted to identify the top five and bottom countries based on world rank.
         In addition, we plotted economic freedom score vs labor freedom index by region.
         There are several more analyses that could be done with this data.
@@ -107,13 +117,13 @@
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./Images/eco_top_five.png" class="d-block w-75" alt="Top Five Countries by World Rank">
+                        <img src="./Images/eco_top_five.png" class="d-block w-15" alt="Top Five Countries by World Rank">
                     </div>
                     <div class="carousel-item">
-                        <img src="./Images/eco_bottom_five.png" class="d-block w-75" alt="Bottom Five Countries by World Rank">
+                        <img src="./Images/eco_bottom_five.png" class="d-block w-15" alt="Bottom Five Countries by World Rank">
                     </div>
                     <div class="carousel-item">
-                        <img src="./Images/scatter_plot.png" class="d-block w-75" alt="Economic Freedom Vs Labor Freedom by Region">
+                        <img src="./Images/scatter_plot.png" class="d-block w-15" alt="Economic Freedom Vs Labor Freedom by Region">
                     </div>
                     
                 </div>
